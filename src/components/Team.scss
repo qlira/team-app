@@ -1,0 +1,46 @@
+.wrapper{
+    display: flex;
+    flex: 0 0 28%;
+    flex-wrap: wrap;
+    border: 1px solid #ffa260;
+    border-radius: 20px;
+    padding: 15px;
+    background-image: linear-gradient(to right, #ffecd2 0%, #ffcda3 100%);
+    color: #3d3d3d !important;
+    margin: 15px;
+}
+.wrapper a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper:hover{
+    color: #ffa260 !important;
+    background-image: linear-gradient(to right, white 0%, white 100%);
+}
+
+.t-group{
+    width: 100%;
+}
+
+.icon-wrapper{
+    width: 100%;
+}
+
+span {
+    margin: -4px 0 0 0;
+}
+.icons{
+    margin: 0 0 -3px 0;
+    padding-right: 5px;
+}
+
+.group-icon{
+    // display: flex;
+    padding-bottom: 12px;
+}
+.description {
+    height: 48px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
