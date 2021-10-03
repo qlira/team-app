@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./App.scss";
-import api from "./api/teamAPI";
 import axios from "axios";
 import TeamsList from "./components/TeamsList";
 
@@ -11,7 +10,6 @@ function App() {
   const [tigeredBtn, setTrigeredBtn] = useState("1");
 
   const fetchTeamsHandler = async () => {
-    // const response = await fetch("/data/v1/teams");
     const result = await axios("/data/v1/teams", {
       method: "GET",
       mode: "no-cors",
@@ -53,7 +51,6 @@ function App() {
 
   return (
     <React.Fragment>
-      <div>
       <nav className="button-box">
         <input type="text" placeholder="Search" onChange={searchInputHandler} />
         <div>
@@ -87,7 +84,6 @@ function App() {
           search={searchBtn}
         />
       </section>
-      </div>
     </React.Fragment>
   );
 }

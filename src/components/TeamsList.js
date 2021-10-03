@@ -11,7 +11,6 @@ const TeamsList = (props) => {
           if (props.search === "") {
             return team;
           }
-          console.log(team.email);
           if (team['team-full'].toLowerCase().includes(props.search.toLowerCase())) {
             return team;
           }
